@@ -9,7 +9,7 @@ func main() {
     host := "localhost"
     port := "5432"
     user := "postgres"
-    password := "toha2004"
+    password := "Aitu2021!"
     dbname := "example"
 
     db, err := postgres.ConnectDB(host, port, user, password, dbname)
