@@ -3,7 +3,7 @@ package postgres
 import (
     "database/sql"
     "fmt"
-    _ "github.com/lib/pq" // Подключаем драйвер PostgreSQL
+    _ "github.com/lib/pq" 
 )
 
 func ConnectDB(host, port, user, password, dbname string) (*sql.DB, error) {
@@ -12,8 +12,7 @@ func ConnectDB(host, port, user, password, dbname string) (*sql.DB, error) {
     if err != nil {
         return nil, err
     }
-
-    // Проверяем подключение к БД
+    
     err = db.Ping()
     if err != nil {
         db.Close()
